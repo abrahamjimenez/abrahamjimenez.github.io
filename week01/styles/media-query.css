@@ -1,0 +1,26 @@
+ /* html selectors */
+ header,
+ main,
+ footer {
+ 	font-family: 'Roboto', sans-serif;
+ 	max-width: 640px;
+ 	margin: 1rem auto;
+ 	border: 1px solid black;
+ 	padding: 15px;
+ 	background-color: rgba(164, 229, 255, 1);
+ }
+
+ main {
+ 	display: grid;
+ 	grid-template-columns: 1fr;
+ 	gap: 1rem;
+ }
+
+ section {
+ 	padding: 15px;
+ 	background-color: white;
+ }
+
+ /* class selectors */
+
+ /* id selectors */
