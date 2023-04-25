@@ -1,0 +1,48 @@
+@media (min-width: 800px) {
+
+	/* html selectors */
+	nav ul {
+		display: flex;
+		flex-direction: row;
+	}
+
+	header img {
+		margin-right: 25px;
+	}
+
+	header h1 {
+		margin-left: 5px;
+	}
+
+	nav ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+
+	main {
+		max-width: 1000px;
+	}
+
+	main h2 {
+		text-align: left;
+	}
+
+	/* class selectors */
+
+	.card-container {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		gap: 15px;
+	}
+
+	.card ul li {
+		padding-left: 10px;
+	}
+
+	.card {
+		box-shadow: 0 0 10px gray;
+	}
+
+
+	/* id selectors */
+}
