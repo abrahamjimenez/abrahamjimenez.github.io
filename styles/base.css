@@ -1,5 +1,116 @@
 /* html selectors */
+* {
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+	--color-1: #FFFD98;
+	--color-2: #BDE4A7;
+	--color-3: #B3D2B2;
+	--color-4: #9FBBCC;
+	--color-5: #7A9CC6;
+
+	--font-sans-serif: 'Open Sans', sans-serif;
+	--font-sans: 'Poltawski Nowy', serif;
+}
+
+header {
+	background-color: var(--color-2)
+}
+
+nav {
+	grid-column: 1/3;
+	background-color: var(--color-2);
+	margin: 0 auto;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+}
+
+nav ul li {
+	text-align: center;
+	padding: 10px;
+}
+
+nav ul li a {
+	text-decoration: none;
+}
+
+nav ul li:hover {
+	background-color: var(--color-1)
+}
+
+main {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+main h2 {
+	text-align: center;
+	padding-top: 15px;
+}
+
+main hr {
+	margin: 10px;
+}
+
+li {
+	list-style: none;
+}
+
+header {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 1fr;
+}
+
+header img {
+	width: 96px;
+	height: 132px;
+	margin: 0 auto;
+}
+
+header h1 {
+	margin: auto;
+}
+
+footer {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	background-color: var(--color-2);
+}
+
+footer p {
+	text-align: center;
+	padding: 5px;
+}
 
 /* class selectors */
+.card {
+	display: grid;
+	grid-template-columns: 1fr;
+	margin-bottom: 10px;
+	border: 1px solid black;
+	border-radius: 10px;
+
+}
+
+.card h3 {
+	text-align: center;
+	background-color: var(--color-2);
+	padding: 20px;
+	margin: 0;
+	border-radius: 10px 10px 0 0;
+
+}
+
+.card ul li {
+	padding: 3px;
+}
+
 
 /* id selectors */
