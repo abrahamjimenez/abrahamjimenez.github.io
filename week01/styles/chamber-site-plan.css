@@ -1,0 +1,80 @@
+/* global */
+* {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+:root {
+	--color-heading: #2A9D8F;
+	--color-paragraph: #264653;
+	--color-background-1: #E9C46A;
+	--color-background-2: #F4A261;
+	--color-background-3: #E76F51;
+
+	/* headings */
+	--font-heading: 'Poltawski Nowy', serif;
+	/* paragraphs */
+	--font-paragraph: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-heading);
+	color: var(--color-heading);
+}
+
+body {
+	background-color: var(--color-background-1)
+}
+
+p {
+	font-family: var(--font-paragraph);
+	color: var(--color-paragraph)
+}
+
+img {
+	margin: 0 auto;
+	;
+}
+
+/* html selectors */
+/* head */
+/* main */
+/* footer */
+
+/* class selectors */
+/* head */
+/* main */
+.color-heading {
+	background-color: var(--color-heading);
+	color: white;
+}
+
+.color-paragraph {
+	background-color: var(--color-paragraph);
+	color: white;
+}
+
+.color-background-1 {
+	background-color: var(--color-background-1);
+}
+
+.color-background-2 {
+	background-color: var(--color-background-2)
+}
+
+.color-background-3 {
+	background-color: var(--color-background-3)
+}
+
+/* footer */
+
+/* id selectors */
+/* head */
+/* main */
+/* footer */
