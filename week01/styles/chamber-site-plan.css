@@ -80,4 +80,8 @@ img {
 #typography-heading {
 	font-family: var(--font-heading);
 }
+
+#black {
+	color: black;
+}
 /* footer */
