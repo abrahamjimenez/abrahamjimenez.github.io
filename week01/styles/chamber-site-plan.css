@@ -77,4 +77,7 @@ img {
 /* id selectors */
 /* head */
 /* main */
+#typography-heading {
+	font-family: var(--font-heading);
+}
 /* footer */
