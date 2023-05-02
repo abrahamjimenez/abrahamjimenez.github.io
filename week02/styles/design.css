@@ -9,6 +9,15 @@ footer {
 	margin: 0 auto;
 }
 
+div.banner {
+	border: 1px solid #bbb;
+	padding: 1rem;
+	background-color: rgb(230, 243, 254);
+	font-weight: 700;
+	word-break: break-word;
+	text-align: center;
+}
+
 marquee {
 	padding: 1rem;
 	background-color: #eee;
@@ -20,11 +29,12 @@ h1 {
 
 main {
 	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
 h2 {
 	color: navy;
-	text-align: center;
+	grid-column: 1/3;
 }
 
 article p {
@@ -32,13 +42,14 @@ article p {
 }
 
 .callout {
-	color: #777;
-	background-color: #702963;
+	color: #bbb;
+	background-color: #4f1143;
+	padding: 20px;
+	grid-column: 1/3;
 }
 
 footer {
 	margin-top: 1rem;
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 	font-size: smaller;
-	text-align: right;
 }
