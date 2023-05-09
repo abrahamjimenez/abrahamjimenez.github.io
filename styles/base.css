@@ -46,13 +46,12 @@ nav ul li:hover {
 	background-color: var(--color-5);
 }
 
-a {
+nav a {
 	text-decoration: none;
 	color: black;
-	background-color: rgb(182, 182, 182);
 }
 
-a:hover {
+nav a:hover {
 	text-decoration: underline;
 	color: rgb(29, 29, 29);
 }
@@ -60,6 +59,7 @@ a:hover {
 main {
 	max-width: 500px;
 	margin: 0 auto;
+	border-radius: 10px;
 }
 
 main h2 {
@@ -116,6 +116,17 @@ footer p {
 
 }
 
+.card a {
+	text-decoration: none;
+	color: black;
+	background-color: rgb(182, 182, 182);
+}
+
+.card a:hover {
+	text-decoration: underline;
+	color: rgb(29, 29, 29);
+}
+
 .card h3 {
 	text-align: center;
 	background-color: var(--color-2);
@@ -147,7 +158,14 @@ footer p {
 }
 
 #dark {
-	width: 50px;
-	height: 50px;
-	align-self: start;
+	padding: 10px;
+	background-color: white;
+	justify-self: center;
+	align-self: center;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+#dark.darkMode {
+	background-color: black;
 }
