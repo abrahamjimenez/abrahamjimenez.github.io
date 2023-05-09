@@ -1,9 +1,11 @@
 @media (min-width: 800px) {
 
 	/* html selectors */
-	nav ul {
-		display: flex;
-		flex-direction: row;
+	
+	nav ul li {
+		text-align: center;
+		padding: 10px;
+		display: block;
 	}
 
 	header img {
@@ -45,4 +47,7 @@
 
 
 	/* id selectors */
+	#menu {
+		display: none;
+	}
 }
