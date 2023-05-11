@@ -6,11 +6,11 @@
 }
 
 :root {
-	--color-heading: #175959;
-	--color-paragraph: #264653;
-	--color-background-1: #E9C46A;
+	--color-heading: #3A5427;
+	--color-paragraph: #1f1e00;
+	--color-background-1: #FFD773;
 	--color-background-2: #F4A261;
-	--color-background-3: #E76F51;
+	--color-background-3: #FF8473;
 
 	/* headings */
 	--font-heading: 'Poltawski Nowy', serif;
@@ -79,9 +79,5 @@ img {
 /* main */
 #typography-heading {
 	font-family: var(--font-heading);
-}
-
-#black {
-	color: black;
 }
 /* footer */
