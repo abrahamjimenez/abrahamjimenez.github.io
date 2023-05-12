@@ -1,35 +1,36 @@
 @media (width > 450px) {
+
 	/* elements */
 	nav ul {
-		display : flex;
+		display: flex;
 		list-style-type: none;
 		justify-content: center;
 		font-size: 1.2em;
 	}
-	
+
 	h2,
 	p {
 		margin-left: 12%;
 	}
-	
+
 	footer ul {
 		display: grid;
 		grid-template-rows: auto;
 		justify-content: start;
 	}
-	
+
 	footer ul li {
 		font-size: 1.3em;
 	}
-	
+
 	footer ul li:nth-child(1) {
 		font-size: 1.4rem;
 	}
-	
+
 	/* class */
-	.icons--container .fa {	
+	.icons--container .fa {
 		font-size: 1.3em;
 	}
-	
+
 	/* id */
 }
