@@ -6,7 +6,47 @@
 }
 
 /* elements */
+header {
+	display: grid;
+}
+
+h1 {
+	text-align: center;
+}
+
+nav {
+	display: block;
+	text-align: center;
+}
+
+nav li {
+	padding: 8px;
+}
+
+img {
+	height: auto;
+	width: 100%;
+
+}
+
+main {
+	display: grid;
+	grid-template-rows: auto;
+
+	margin: auto;
+}
 
 /* class */
+.flyer {
+	padding: 16px 0;
+	margin: auto;
+}
+
+.flyer img {
+	width: 90%;
+	display: block;
+	margin: auto;
+}
+
 
 /* id */
