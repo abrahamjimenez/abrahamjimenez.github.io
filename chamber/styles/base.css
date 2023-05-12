@@ -64,6 +64,16 @@ nav {
 	text-align: center;
 }
 
+nav a {
+	text-decoration: none;
+	color: var(--color-paragraph)
+}
+
+nav a:hover {
+	color: var(--color-heading);
+	text-decoration: underline;
+}
+
 nav li {
 	padding: 8px;
 }
@@ -90,10 +100,11 @@ header {
 footer {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	
+
 }
 
-footer ul, footer li {
+footer ul,
+footer li {
 	font-size: 8px;
 }
 
@@ -130,15 +141,12 @@ footer a i {
 	width: 100%;
 }
 
-.icons--container .fa {	
-	font-size: 1em;
-}
-
 /* class */
 .hero img {
 	display: block;
 	margin: auto;
 	width: 96%;
+	max-width: 800px;
 }
 
 .flyer {
@@ -160,6 +168,7 @@ footer a i {
 .news__card img {
 	display: block;
 	width: 80%;
+	max-width: 800px;
 	margin: auto;
 }
 
@@ -171,6 +180,10 @@ footer a i {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	align-items: flex-start;
+}
+
+.icons--container .fa {
+	font-size: 1em;
 }
 
 
