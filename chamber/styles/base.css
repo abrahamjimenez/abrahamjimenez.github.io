@@ -28,8 +28,12 @@ h6 {
 	color: var(--color-heading);
 }
 
+html {
+	overflow-x: hidden;
+}
+
 body {
-	background-color: var(--color-background-1)
+	background-color: var(--color-background-1);
 }
 
 p {
@@ -45,6 +49,7 @@ header {
 h1 {
 	text-align: center;
 }
+
 h2 {
 	padding: 16px 0 0 0;
 }
@@ -77,11 +82,65 @@ main {
 	margin: auto;
 }
 
-footer, header {
+footer,
+header {
 	background-color: var(--color-background-2)
 }
 
+footer {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	
+}
+
+footer ul, footer li {
+	font-size: 8px;
+}
+
+footer ul li:nth-child(1) {
+	margin-top: 8px;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+footer ul li {
+	list-style-type: none;
+	margin-left: 16px;
+	padding: 2px 0;
+}
+
+footer a {
+	text-decoration: none;
+	color: var(--color-paragraph);
+	font-size: 1.5em;
+}
+
+footer a:hover {
+	text-decoration: underline;
+	color: var(--color-heading)
+}
+
+footer a {
+	text-align: center;
+	cursor: pointer;
+}
+
+footer a i {
+	padding: 100% 0;
+	width: 100%;
+}
+
+.icons--container .fa {	
+	font-size: 1em;
+}
+
 /* class */
+.hero img {
+	display: block;
+	margin: auto;
+	width: 96%;
+}
+
 .flyer {
 	padding: 16px 0 0 0;
 	margin: auto;
@@ -107,6 +166,13 @@ footer, header {
 .information p {
 	padding: 8px 16px;
 }
+
+.icons--container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	align-items: flex-start;
+}
+
 
 
 /* id */
