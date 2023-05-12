@@ -5,6 +5,38 @@
 
 }
 
+:root {
+	--color-heading: #3A5427;
+	--color-paragraph: #1f1e00;
+	--color-background-1: #FFD773;
+	--color-background-2: #F4A261;
+	--color-background-3: #FF8473;
+
+	/* headings */
+	--font-heading: 'Poltawski Nowy', serif;
+	/* paragraphs */
+	--font-paragraph: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-heading);
+	color: var(--color-heading);
+}
+
+body {
+	background-color: var(--color-background-1)
+}
+
+p {
+	font-family: var(--font-paragraph);
+	color: var(--color-paragraph)
+}
+
 /* elements */
 header {
 	display: grid;
@@ -12,6 +44,14 @@ header {
 
 h1 {
 	text-align: center;
+}
+h2 {
+	padding: 16px 0 0 0;
+}
+
+h2,
+p {
+	margin-left: 24px;
 }
 
 nav {
@@ -26,6 +66,7 @@ nav li {
 img {
 	height: auto;
 	width: 100%;
+	border: 1px solid var(--color-heading);
 
 }
 
@@ -36,9 +77,13 @@ main {
 	margin: auto;
 }
 
+footer, header {
+	background-color: var(--color-background-2)
+}
+
 /* class */
 .flyer {
-	padding: 16px 0;
+	padding: 16px 0 0 0;
 	margin: auto;
 }
 
@@ -46,6 +91,21 @@ main {
 	width: 90%;
 	display: block;
 	margin: auto;
+}
+
+.news {
+	display: grid;
+	gap: 16px;
+}
+
+.news__card img {
+	display: block;
+	width: 80%;
+	margin: auto;
+}
+
+.information p {
+	padding: 8px 16px;
 }
 
 
