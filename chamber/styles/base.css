@@ -232,7 +232,7 @@ footer i:hover {
 	width: 96%;
 	max-width: 800px;
 	display: block;
-	margin: auto;
+	margin: 16px auto auto auto;
 }
 
 .events img {
@@ -264,11 +264,12 @@ footer i:hover {
 }
 
 .spotlights h2 {
-	margin-bottom: 16px;	
+	margin-bottom: 16px;
 }
 
 .spotlight__container h3 {
 	padding: 8px 16px;
+	text-align: center;
 }
 
 .ad {
