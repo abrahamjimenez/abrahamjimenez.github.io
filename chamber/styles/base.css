@@ -82,6 +82,7 @@ img {
 	height: auto;
 	width: 100%;
 	border: 1px solid var(--color-heading);
+	border-radius: 8px;
 
 }
 
@@ -143,7 +144,7 @@ footer i {
 	padding: 5px;
 	width: 25px;
 	height: 25px;
-	
+
 }
 
 footer i:hover {
@@ -178,12 +179,12 @@ footer i:hover {
 
 .join:hover {
 	background-color: var(--color-background-3);
-	
+
 }
 
 .weather {
-	padding: 16px 0 0 0;
-	margin: auto;
+	margin: 16px auto 0 auto;
+	position: relative;
 }
 
 .weather img {
@@ -193,7 +194,25 @@ footer i:hover {
 }
 
 .weather__card {
-	border: 1px solid red;
+	position: absolute;
+	border: 1px solid var(--color-paragraph);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 64%;
+	width: 64%;
+	opacity: 0.6;
+	background-color: white;
+	text-align: center;
+	border-radius: 16px;
+}
+
+.weather__card p {
+	margin: 0;
+}
+
+.weather__card:hover {
+	opacity: .8;
 }
 
 .news {
@@ -206,6 +225,57 @@ footer i:hover {
 	width: 80%;
 	max-width: 800px;
 	margin: auto;
+}
+
+.events {
+	position: relative;
+}
+
+.events img {
+	display: block;
+	margin: auto;
+	width: 96%;
+}
+
+.events__card {
+	position: absolute;
+	border: 1px solid var(--color-paragraph);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 64%;
+	width: 64%;
+	opacity: 0.75;
+	background-color: white;
+	text-align: center;
+	border-radius: 16px;
+}
+
+.events__card:hover {
+	opacity: 0.8;
+}
+
+.spotlights {
+	display: grid;
+}
+
+.spotlights h2 {
+	margin-bottom: 16px;	
+}
+
+.ad__container h3 {
+	padding: 8px 16px;
+}
+
+.ad {
+	background-color: white;
+	border: 1px solid black;
+	width: 96%;
+	height: 200px;
+	display: block;
+	margin: auto;
+	border-radius: 8px;
+	max-width: 800px;
 }
 
 .information p {
