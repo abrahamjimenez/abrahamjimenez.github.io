@@ -229,12 +229,15 @@ footer i:hover {
 
 .events {
 	position: relative;
+	width: 96%;
+	max-width: 800px;
+	display: block;
+	margin: auto;
 }
 
 .events img {
 	display: block;
 	margin: auto;
-	width: 96%;
 }
 
 .events__card {
