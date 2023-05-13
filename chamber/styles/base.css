@@ -259,6 +259,7 @@ footer i:hover {
 }
 
 .spotlights {
+	height: 100%;
 	display: grid;
 }
 
@@ -266,11 +267,12 @@ footer i:hover {
 	margin-bottom: 16px;	
 }
 
-.ad__container h3 {
+.spotlight__container h3 {
 	padding: 8px 16px;
 }
 
 .ad {
+	display: block !important;
 	background-color: white;
 	border: 1px solid black;
 	width: 96%;
