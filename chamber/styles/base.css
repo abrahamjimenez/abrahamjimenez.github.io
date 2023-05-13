@@ -158,15 +158,42 @@ footer i:hover {
 	max-width: 800px;
 }
 
-.flyer {
+.hero {
+	position: relative;
+}
+
+.join {
+	padding: 16px 32px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	background-color: var(--color-background-1);
+	border: 1px solid var(--color-paragraph);
+	border-radius: 8px;
+	text-decoration: none;
+	color: var(--color-paragraph);
+	font-size: 24px;
+}
+
+.join:hover {
+	background-color: var(--color-background-3);
+	
+}
+
+.weather {
 	padding: 16px 0 0 0;
 	margin: auto;
 }
 
-.flyer img {
+.weather img {
 	width: 90%;
 	display: block;
 	margin: auto;
+}
+
+.weather__card {
+	border: 1px solid red;
 }
 
 .news {
