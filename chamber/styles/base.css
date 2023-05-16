@@ -298,6 +298,35 @@ footer i:hover {
 	font-size: 1em;
 }
 
-
-
 /* id */
+
+.navigation {
+	display: none;
+}
+
+.navigation.open {
+	display: block;
+}
+
+#menu {
+	background-color: var(--color-background-1);
+	border: 1px solid var(--color-paragraph);
+	border-radius: 8px;
+	
+	padding: 8px;
+	width: 40px;
+	display: block;
+	margin: auto 0 auto auto;
+}
+
+#menu.open {
+	background-color: var(--color-background-3);
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
