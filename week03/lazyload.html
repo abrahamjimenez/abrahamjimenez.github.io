@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lazyload</title>
+	<!-- Styles -->
+	<link rel="stylesheet" href="styles/styles.css">
+	<!-- Scripts -->
+	<script src="scripts/scripts.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<h1>Lazyload</h1>
+	</header>
+
+	<main>
+		<!-- images have different heights so lazy load works in assignment -->
+		<picture><img src="//via.placeholder.com/400x600/" alt="placeholder" width="400" height="600" loading="lazy"></picture>
+		<picture><img src="//via.placeholder.com/400x601/" alt="placeholder" width="400" height="600" loading="lazy"></picture>
+		<picture><img src="//via.placeholder.com/400x602/" alt="placeholder" width="400" height="600" loading="lazy"></picture>
+		<picture><img src="//via.placeholder.com/400x603/" alt="placeholder" width="400" height="600" loading="lazy"></picture>
+		<picture><img src="//via.placeholder.com/400x604/" alt="placeholder" width="400" height="600" loading="lazy"></picture>
+		<picture><img src="//via.placeholder.com/400x605/" alt="placeholder" width="400" height="600" loading="lazy"></picture>
+	</main>
+
+	<footer>
+		<p>Last Modified: <span id="date"></span></p>
+	</footer>
+</body>
+
+
+</html>
