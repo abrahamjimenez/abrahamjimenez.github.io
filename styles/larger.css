@@ -4,16 +4,16 @@
 	
 	nav ul li {
 		text-align: center;
-		padding: 10px;
+		padding: 8px;
 		display: block;
 	}
 
 	header img {
-		margin-right: 25px;
+		margin-right: 24px;
 	}
 
 	header h1 {
-		margin-left: 5px;
+		margin-left: 8px;
 	}
 
 	nav ul {
@@ -27,6 +27,7 @@
 
 	main h2 {
 		text-align: left;
+		margin-left: 16px;
 	}
 
 	/* class selectors */
@@ -34,15 +35,15 @@
 	.card-container {
 		display: grid;
 		grid-template-columns: 2fr 1fr;
-		gap: 15px;
+		gap: 16px;
 	}
 
 	.card ul li {
-		padding-left: 10px;
+		padding-left: 8px;
 	}
 
 	.card {
-		box-shadow: 0 0 10px gray;
+		box-shadow: 0 0 8px gray;
 	}
 
 
