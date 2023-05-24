@@ -91,6 +91,13 @@ header h1 {
 	margin: auto;
 }
 
+iframe {
+	display: block;
+	margin: auto;
+	width: 88%;
+	height: auto;
+}
+
 footer {
 	display: grid;
 	grid-template-rows: 1fr 1fr;
