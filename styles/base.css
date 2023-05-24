@@ -112,12 +112,15 @@ footer p {
 /* class selectors */
 .hero {
 	position: relative;
-	margin: 8px 16px;
+	padding: 8px 16px;
+	display: block;
+	margin: auto;
+	max-width: 800px;
 }
 
 .hero img {
+
 	width: 100%;
-	max-width: 800px;
 	height: auto;
 }
 
