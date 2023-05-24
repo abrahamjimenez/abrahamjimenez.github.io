@@ -103,6 +103,31 @@ footer p {
 }
 
 /* class selectors */
+.hero {
+	position: relative;
+	margin: 8px 16px;
+}
+
+.hero img {
+	width: 100%;
+	height: auto;
+}
+
+.hero__banner {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+
+	border: 1px solid black;
+	padding: 16px 32px;
+	background-color: white;
+	opacity: 0.75;
+}
+
+.hero p {
+	opacity: 1;
+}
+
 .open li {
 	display: block
 }
