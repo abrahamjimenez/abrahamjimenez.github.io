@@ -51,4 +51,15 @@
 	#menu {
 		display: none;
 	}
+	
+	/* discover.html */
+	.discover {
+		display: grid;
+		gap: 8px;
+		grid-template-columns: 1fr 2fr;
+	}
+	
+	.aside__2 {
+		margin-bottom: 4px;
+	}
 }
