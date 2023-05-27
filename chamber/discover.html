@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="course assignment portal, WDD 230 - Web Frontend Development, Abraham Jimenez">
+    <meta name="author" content="Abraham Jimenez">
+    <title>Abraham Jimenez - WDD 230 - Web Frontend Development - Discover</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poltawski+Nowy&display=swap" rel="stylesheet">
+    <!-- Link styles -->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/larger.css">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <!-- Scripts -->
+    <script src="../scripts/hamburger.js" defer></script>
+    <script src="../scripts/dark.js" defer></script>
+    <script src="../scripts/getDates.js" defer></script>
+    <script src="../scripts/pageVisits.js" defer></script>
+    <!-- Meta Facebook Tags -->
+    <meta property="og:title" content="Abraham Jimenez - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1518024291416-3244cd4a85b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80">
+    <meta property="og:url" content="https://abrahamjimenez.github.io/wdd230/">
+    <!--  -->
+</head>
+
+<body>
+    <header>
+        <img src="../images/profile-picture.webp" alt="Main image of Abraham Jimenez">
+        <h1>Abraham Jimenez</h1>
+        <div id="dark">✔️</div>
+        <!-- <button id="dark">️✔️</button> -->
+    </header>
+
+    <nav>
+        <button id="menu" aria-label="Hamburger menu button"></button>
+        <ul class="navigation">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="">Survey</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <picture>
+            <source media="(max-width: 500px)" srcset="../images/boise_sm.webp">
+            <img src="../images/boise_lg.webp" alt="Boise Temple" width="800" height="600">
+        </picture>
+        <div class="hero__banner">
+            <p>Boise Idaho Temple</p>
+        </div>
+    </div>
+
+    <main class="discover">
+        <aside class="discover__aside">
+            <section class="aside__1">
+                <h2>Pasco, Washington</h2>
+                <p>Pasco, Washington, is a vibrant city located in the heart of the Tri-Cities region. Situated at the confluence of the Columbia, Snake, and Yakima rivers, Pasco boasts breathtaking natural landscapes and abundant outdoor recreational opportunities. The city is known for its diverse and welcoming community, with a rich cultural heritage influenced by its agricultural roots and proximity to Native American reservations. With a thriving economy, vibrant downtown area, and a variety of events and festivals throughout the year, Pasco offers a wonderful blend of urban amenities and small-town charm.</p>
+            </section>
+            <section class="aside__2">
+                <h2>Sacajawea Historical State Park</h2>
+                <p>Sacagawea Park, located in Pasco, Washington, is a beautiful and historically significant destination for both locals and visitors. Named in honor of Sacagawea, the Shoshone woman who played a vital role in the Lewis and Clark expedition, the park offers a serene and picturesque setting along the Columbia River. With its lush green spaces, walking trails, and stunning river views, Sacagawea Park is an ideal spot for outdoor activities such as picnicking, jogging, or simply enjoying nature's tranquility. The park also features a bronze statue of Sacagawea, capturing her strength and resilience as a symbol of exploration and cultural heritage.</p>
+            </section>
+            <section class="aside__3">
+                <h2>Welcome!</h2>
+                <p id="page-visits"></p>
+            </section>
+        </aside>
+        <div class="discover__section">
+            <div class="discover__section__pictures">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="../week03/images/sacajawea_sm.webp">
+                    <img src="../week03/images/sacajawea_lg.webp" alt="Historic Sacajawea Museum" width="500" height="350" loading="lazy">
+                </picture>
+                <p class="caption">Historic Sacajawea Museum</p>
+            </div>
+            <div class="discover__section__pictures">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="../week03/images/sacajawea_market_sm.webp">
+                    <img src="../week03/images/sacajawea_market_lg.webp" alt="Lewis & Clark Historical Marker" width="500" height="350" loading="lazy">
+                </picture>
+                <p class="caption">Historical Marker</p>
+            </div>
+            <div class="discover__section__pictures">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="../week03/images/sacajawea_river_sm.webp">
+                    <img src="../week03/images/sacajawea_river_lg.webp" alt="Columbia River" width="500" height="350" loading="lazy">
+                </picture>
+                <p class="caption">Columbia River</p>
+            </div>
+
+            <div class="discover__section__pictures">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="../week03/images/sacajawea_cemetery_sm.webp">
+                    <img src="../week03/images/sacajawea_cemetery_lg.webp" alt="Cemetery Historical Marker" width="500" height="350" loading="lazy">
+                </picture>
+                <p class="caption">Historical Marker</p>
+            </div>
+            <div class="discover__section__pictures">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="../week03/images/sacajawea_lake_sm.webp">
+                    <img src="../week03/images/sacajawea_lake_lg.webp" alt="Sacajawea Lake" width="500" height="350" loading="lazy">
+                </picture>
+                <p class="caption">Sacajawea Lake</p>
+            </div>
+            <div class="discover__section__pictures">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="../week03/images/sacajawea_playground_sm.webp">
+                    <img src="../week03/images/sacajawea_playground_lg.webp" alt="Sacajawea Playground" width="500" height="350" loading="lazy">
+                </picture>
+                <p class="caption">Sacajawea Playground</p>
+            </div>
+        </div>
+    </main>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d47544.934118489524!2d-119.14590335970065!3d46.234729175287235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1684895102058!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <footer>
+        <p>&copy; <span class="current-year">2023</span> Abraham Jimenez United States 🇺🇸</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
