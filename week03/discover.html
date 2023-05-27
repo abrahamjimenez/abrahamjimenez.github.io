@@ -21,6 +21,7 @@
     <script src="../scripts/hamburger.js" defer></script>
     <script src="../scripts/dark.js" defer></script>
     <script src="../scripts/getDates.js" defer></script>
+    <script src="../scripts/pageVisits.js" defer></script>
     <!-- Meta Facebook Tags -->
     <meta property="og:title" content="Abraham Jimenez - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
@@ -67,23 +68,55 @@
                 <h2>Sacajawea Historical State Park</h2>
                 <p>Sacagawea Park, located in Pasco, Washington, is a beautiful and historically significant destination for both locals and visitors. Named in honor of Sacagawea, the Shoshone woman who played a vital role in the Lewis and Clark expedition, the park offers a serene and picturesque setting along the Columbia River. With its lush green spaces, walking trails, and stunning river views, Sacagawea Park is an ideal spot for outdoor activities such as picnicking, jogging, or simply enjoying nature's tranquility. The park also features a bronze statue of Sacagawea, capturing her strength and resilience as a symbol of exploration and cultural heritage.</p>
             </section>
-            <!-- </section> todo: calendar?
             <section class="aside__3">
-            </section> -->
+                <h2>Welcome!</h2>
+                <p id="page-visits"></p>
+            </section>
         </aside>
         <div class="discover__section">
-            <picture>
-                <source media="(max-width: 500px)" srcset="images/sacajawea_sm.webp">
-                <img src="images/sacajawea_lg.webp" alt="" width="500" height="350" loading="lazy">
-            </picture>
-            <picture>
-                <source media="(max-width: 500px)" srcset="images/sacajawea_market_sm.webp">
-                <img src="images/sacajawea_market_lg.webp" alt="" width="500" height="350" loading="lazy">
-            </picture>
-            <picture>
-                <source media="(max-width: 500px)" srcset="images/sacajawea_river_sm.webp">
-                <img src="images/sacajawea_river_lg.webp" alt="" width="500" height="350" loading="lazy">
-            </picture>
+            <div class="discover__section__pictures">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/sacajawea_sm.webp">
+                    <img src="images/sacajawea_lg.webp" alt="Historic Sacajawea Museum" width="500" height="350" loading="lazy">
+                </picture>
+                <p class="caption">Historic Sacajawea Museum</p>
+            </div>
+            <div class="discover__section__pictures">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/sacajawea_market_sm.webp">
+                    <img src="images/sacajawea_market_lg.webp" alt="Historical Marker" width="500" height="350" loading="lazy">
+                </picture>
+                <p class="caption">Historical Marker</p>
+            </div>
+            <div class="discover__section__pictures">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/sacajawea_river_sm.webp">
+                    <img src="images/sacajawea_river_lg.webp" alt="Columbia River" width="500" height="350" loading="lazy">
+                </picture>
+                <p class="caption">Columbia River</p>
+            </div>
+
+            <div class="discover__section__pictures">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/sacajawea_cemetery_sm.webp">
+                    <img src="images/sacajawea_cemetery_lg.webp" alt="Historical Marker" width="500" height="350" loading="lazy">
+                </picture>
+                <p class="caption">Historical Marker</p>
+            </div>
+            <div class="discover__section__pictures">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/sacajawea_lake_sm.webp">
+                    <img src="images/sacajawea_lake_lg.webp" alt="Sacajawea Lake" width="500" height="350" loading="lazy">
+                </picture>
+                <p class="caption">Sacajawea Lake</p>
+            </div>
+            <div class="discover__section__pictures">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/sacajawea_playground_sm.webp">
+                    <img src="images/sacajawea_playground_lg.webp" alt="Sacajawea Playground" width="500" height="350" loading="lazy">
+                </picture>
+                <p class="caption">Sacajawea Playground</p>
+            </div>
         </div>
     </main>
 

@@ -181,12 +181,12 @@ footer p {
 	display: grid;
 	gap: 8px;
 	grid-template-columns: 1fr;
-	margin: 8px;
+	padding: 8px;
 }
 
 .discover__aside {
 	display: grid;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: auto;
 	gap: 8px;
 }
 
@@ -196,7 +196,7 @@ footer p {
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
-	
+
 	border-radius: 8px;
 }
 
@@ -208,15 +208,26 @@ footer p {
 	align-items: center;
 }
 
-.discover__section picture {
-}
-
 .discover__section img {
 	width: 100%;
 	height: auto;
 	border: 1px solid black;
 	border-radius: 8px;
+}
 
+.discover__section__pictures {
+	position: relative;
+}
+
+.caption {
+	position: absolute;
+	top: 48px;
+	left: 8px;
+	background-color: white;
+	opacity: 0.75;
+	padding: 8px 16px;
+	border: 1px solid black;
+	border-radius: 8px;
 }
 
 /* id selectors */
