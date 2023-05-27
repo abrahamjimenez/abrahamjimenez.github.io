@@ -176,6 +176,48 @@ footer p {
 	padding: 8px;
 }
 
+/* discover.html */
+.discover {
+	display: grid;
+	gap: 8px;
+	grid-template-columns: 1fr;
+	margin: 8px;
+}
+
+.discover__aside {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	gap: 8px;
+}
+
+.discover__aside section {
+	border: 1px solid black;
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	
+	border-radius: 8px;
+}
+
+.discover__section {
+	display: grid;
+	grid-template-rows: auto;
+	gap: 8px;
+	justify-content: center;
+	align-items: center;
+}
+
+.discover__section picture {
+}
+
+.discover__section img {
+	width: 100%;
+	height: auto;
+	border: 1px solid black;
+	border-radius: 8px;
+
+}
 
 /* id selectors */
 #menu {
