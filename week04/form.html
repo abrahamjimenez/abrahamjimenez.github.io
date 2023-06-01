@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+	<!-- Styles -->
+	<link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+	<header></header>
+
+	<main>
+		<form>
+			<h1>Register</h1>
+			<div>
+				<fieldset>
+					<legend>Name</legend>
+					<div>
+						<label for="firstName">First Name: </label>
+						<input type="text" name="firstName" id="firstName" placeholder="John" required>
+					</div>
+					<div>
+						<label for="lastName">Last Name: </label>
+						<input type="text" name="lastName" id="lastName" placeholder="Doe" required>
+					</div>
+				</fieldset>
+			</div>
+			<div>
+				<fieldset>
+					<legend>Contact Info</legend>
+					<div>
+						<label for="email">Email: </label>
+						<input type="email" name="email" id="email" placeholder="johndoe@email.com" required>
+					</div>
+					<div>
+						<label for="phone">Phone: </label>
+						<input type="tel" name="phone" id="phone" placeholder="123-456-7890">
+					</div>
+				</fieldset>
+			</div>
+			<div>
+				<fieldset>
+					<legend>Credentials</legend>
+					<div>
+						<label for="username">User Name: </label>
+						<input type="text" name="username" id="username" required>
+					</div>
+					<div>
+						<label for="password">Password: </label>
+						<input type="password" name="password" id="password" required>
+					</div>
+				</fieldset>
+			</div>
+			<div>
+				<input type="submit" value="Register Now!">
+			</div>
+		</form>
+	</main>
+
+	<footer></footer>
+</body>
+
+</html>
