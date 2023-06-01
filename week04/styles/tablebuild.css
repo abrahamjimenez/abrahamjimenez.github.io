@@ -1,0 +1,46 @@
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+table {
+	border-collapse: collapse;
+	text-align: center;
+}
+
+table,
+td,
+tr {
+	border: 1px solid black;
+}
+
+th,
+td,
+caption {
+	padding: 8px;
+}
+
+td,
+caption {
+	color: white;
+	font-weight: bold;
+}
+
+caption {
+	caption-side: top;
+	text-align: center;
+}
+
+tr:nth-child(even) {
+	background-color: #eee;
+}
+
+.black {
+	background-color: black;
+}
+
+.gray {
+	background-color: #333;
+}
