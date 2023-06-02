@@ -35,19 +35,19 @@
             <fieldset>
                 <legend>Applicant Information</legend>
 
-                <label for="fname">First Name*</label>
+                <label for="fname" class="top">First Name*</label>
                 <input type="text" name="fname" id="fname" required>
 
-                <label for="lname">Last Name*</label>
+                <label for="lname" class="top">Last Name*</label>
                 <input type="text" name="lname" id="lname" required>
 
-                <label for="phone">Phone</label>
+                <label for="phone" class="top">Phone</label>
                 <input type="tel" name="phone" id="phone" placeholder="1234567890">
 
-                <label for="email">Email*</label>
+                <label for="email" class="top">Email*</label>
                 <input type="email" name="phoemailne" id="email" placeholder="someone@gmail.com" required>
 
-                <label for="website">Website</label>
+                <label for="website" class="top">Website</label>
                 <input type="url" name="website" id="website" placeholder="http://">
             </fieldset>
 
@@ -55,39 +55,56 @@
                 <legend>Course Information</legend>
                 <div>Audience</div>
 
-                <label for="beginner">Beginner</label>
-                <input type="radio" name="audience" id="beginner" value="beginner">
+                <div class="next">
+                    <input type="radio" name="audience" id="beginner" value="beginner">
+                    <label for="beginner" class="sbs">Beginner</label>
+                </div>
 
-                <label for="intermediate">Intermediate</label>
-                <input type="radio" name="audience" id="intermediate" value="intermediate">
 
-                <label for="advanced">Advanced</label>
-                <input type="radio" name="audience" id="advanced" value="advanced">
+                <div class="next">
+                    <input type="radio" name="audience" id="intermediate" value="intermediate">
+                    <label for="intermediate" class="sbs">Intermediate</label>
+                </div>
+
+
+                <div class="next">
+                    <input type="radio" name="audience" id="advanced" value="advanced">
+                    <label for="advanced" class="sbs">Advanced</label>
+                </div>
 
                 <div>Software Needed</div>
 
-                <label for="photo_editing">Photo Editing</label>
-                <input type="checkbox" name="editing" id="photo_editing" value="yes">
+                <div class="next">
+                    <input type="checkbox" name="editing" id="photo_editing" value="yes">
+                    <label for="photo_editing" class="sbs">Photo Editing</label>
+                </div>
 
-                <label for="coding">Coding</label>
-                <input type="checkbox" name="coding" id="coding" value="yes">
 
-                <label for="processor">Preprocessor</label>
-                <input type="checkbox" name="processor" id="processor" value="yes">
+                <div class="next">
+                    <input type="checkbox" name="coding" id="coding" value="yes">
+                    <label for="coding" class="sbs">Coding</label>
+                </div>
 
-                <label for="client">FTP Client</label>
-                <input type="checkbox" name="client" id="client" value="yes">
+                <div class="next">
+                    <input type="checkbox" name="processor" id="processor" value="yes">
+                    <label for="processor" class="sbs">Preprocessor</label>
+                </div>
+
+                <div class="next">
+                    <input type="checkbox" name="client" id="client" value="yes">
+                    <label for="client" class="sbs">FTP Client</label>
+                </div>
             </fieldset>
 
             <fieldset>
                 <legend>Funding</legend>
 
-                <label for="date">Anticipated Completion Date</label>
+                <label for="date" class="top">Anticipated Completion Date</label>
                 <input type="date" name="date" id="date">
 
-                <label for="subject">Course Subject</label>
+                <label for="subject" class="top">Course Subject</label>
                 <select name="subject" id="subject">
-                    <option value="">Please Select</option>
+                    <option value="">Please Select &#9662;</option>
                     <option value="software">Software Development</option>
                     <option value="creative">Creative Professional</option>
                     <option value="info">Information Technology</option>
@@ -98,11 +115,11 @@
                     <option value="cyber">Cyber Security</option>
                 </select>
 
-                <label for="authors">How Many Authors?</label>
+                <label for="authors" class="top">How Many Authors?</label>
                 <input type="number" name="authors" id="authors">
             </fieldset>
 
-            <input type="submit" value="Propose My Course">
+            <input type="submit" value="Propose My Course" class="submitBtn">
 
         </form>
     </main>
