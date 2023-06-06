@@ -213,6 +213,11 @@ footer p {
 	height: auto;
 	border: 1px solid black;
 	border-radius: 8px;
+	transition: opacity .5s;
+}
+
+.discover__section img:hover {
+	opacity: .5;
 }
 
 .discover__section__pictures {
