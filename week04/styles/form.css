@@ -10,3 +10,7 @@ label {
 input {
 	width: 15rem;
 }
+
+body {
+	overflow: hidden;
+}
