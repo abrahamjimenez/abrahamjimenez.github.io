@@ -8,10 +8,30 @@
 	<title>Form</title>
 	<!-- Styles -->
 	<link rel="stylesheet" href="styles/form.css">
+	<link rel="stylesheet" href="../styles/normalize.css">
+	<link rel="stylesheet" href="../styles/base.css">
+	<link rel="stylesheet" href="../styles/larger.css">
+	<!-- Scripts -->
+	<script src="../scripts/hamburger.js" defer></script>
+	<script src="../scripts/dark.js" defer></script>
 </head>
 
 <body>
-	<header></header>
+	<header>
+		<img src="../images/profile-picture.webp" alt="Abraham Jimenez">
+		<h1>Abraham Jimenez</h1>
+		<div id="dark">✔️</div>
+	</header>
+
+	<nav>
+		<button id="menu" aria-label="Hamburger menu button"></button>
+		<ul class="navigation">
+			<li><a href="">Home</a></li>
+			<li><a href="../chamber/index.html">Chamber</a></li>
+			<li><a href="../week01/chamber-site-plan.html">Site Plan</a></li>
+			<li><a href="">Survey</a></li>
+		</ul>
+	</nav>
 
 	<main>
 		<form>
@@ -34,7 +54,7 @@
 					<legend>Contact Info</legend>
 					<div>
 						<label for="email">Email: </label>
-						<input type="email" name="email" id="email" placeholder="johndoe@email.com" required>
+						<input type="email" name="email" id="email" placeholder="johndoe@email.com" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" required>
 					</div>
 					<div>
 						<label for="phone">Phone: </label>
@@ -51,7 +71,16 @@
 					</div>
 					<div>
 						<label for="password">Password: </label>
-						<input type="password" name="password" id="password" required>
+						<input type="password" name="password" id="password" pattern="[A-Za-z]{9}" required>
+					</div>
+				</fieldset>
+			</div>
+			<div>
+				<fieldset>
+					<legend>Page Rating</legend>
+					<div>
+						<label for="rating">Page Rating</label>
+						<input type="range" name="rating" id="rating" min="0" max="10">
 					</div>
 				</fieldset>
 			</div>
@@ -61,7 +90,10 @@
 		</form>
 	</main>
 
-	<footer></footer>
+	<footer>
+		<p>&copy; <span class="current-year">2023</span> Abraham Jimenez United States 🇺🇸</p>
+		<p id="lastModified"></p>
+	</footer>
 </body>
 
 </html>
