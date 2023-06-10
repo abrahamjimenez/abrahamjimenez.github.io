@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="course assignment portal, WDD 230 - Web Frontend Development, Abraham Jimenez">
+	<meta name="author" content="Abraham Jimenez">
+	<title>Abraham Jimenez - WDD 230 - Web Frontend Development</title>
+	<!-- Google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poltawski+Nowy&display=swap" rel="stylesheet">
+	<!-- Link styles -->
+	<link rel="stylesheet" href="../styles/normalize.css">
+	<link rel="stylesheet" href="../styles/base.css">
+	<link rel="stylesheet" href="../styles/larger.css">
+	<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+	<!-- Scripts -->
+	<script src="../scripts/hamburger.js" defer></script>
+	<script src="../scripts/dark.js" defer></script>
+	<script src="../scripts/getDates.js" defer></script>
+	<script src="scripts/timestamp.js" defer></script>
+	<!-- Meta Facebook Tags -->
+	<meta property="og:title" content="Abraham Jimenez - WDD 230 - Web Frontend Development">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://images.unsplash.com/photo-1518024291416-3244cd4a85b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80">
+	<meta property="og:url" content="https://abrahamjimenez.github.io/wdd230/">
+	<!--  -->
+</head>
+
+<body>
+	<header>
+		<img src="../images/profile-picture.webp" alt="Main image of Abraham Jimenez">
+		<h1>Abraham Jimenez</h1>
+		<div id="dark">✔️</div>
+		<!-- <button id="dark">️✔️</button> -->
+	</header>
+
+	<nav>
+		<button id="menu" aria-label="Hamburger menu button"></button>
+		<ul class="navigation">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../chamber/index.html">Chamber</a></li>
+			<li><a href="../week01/chamber-site-plan.html">Site Plan</a></li>
+			<li><a href="">Survey</a></li>
+		</ul>
+	</nav>
+
+	<div class="hero">
+		<picture>
+			<source media="(max-width: 500px)" srcset="images/boise_sm.webp">
+			<img src="../images/boise_lg.webp" alt="Boise Temple" width="800" height="600">
+		</picture>
+		<div class="hero__banner">
+			<p>Boise Idaho Temple</p>
+		</div>
+	</div>
+
+	<main>
+		<form action="thankyou.html" method="get" id="joinForm">
+			<fieldset>
+				<legend>Personal Information</legend>
+
+				<label for="firstName">First Name:</label>
+				<input type="text" id="firstName" name="firstName" required>
+
+				<label for="lastName">Last Name:</label>
+				<input type="text" id="lastName" name="lastName" required>
+
+				<label for="email">Email:</label>
+				<input type="email" name="email" id="email" required placeholder="email@email.com">
+
+				<label for="phone">Phone Number:</label>
+				<input type="tel" name="phone" id="phone" required>
+			</fieldset>
+
+			<fieldset>
+				<legend>Title or Position</legend>
+
+				<label for="position">Position</label>
+				<input type="text" name="position" id="position" pattern="[A-Za-z -]{7,}" title="alpha characters, hyphens, and spaces with a minimum of seven characters">
+
+				<label for="businessName">Business Name</label>
+				<input type="text" name="businessName" id="businessName" required>
+
+				<label for="description">Description</label>
+				<input type="text" name="description" id="description">
+			</fieldset>
+
+			<div class="benefits--container">
+				<fieldset>
+					<legend>Member Level:</legend>
+
+					<div class="benefits__inputs">
+						<label for="np">Non-Profit:</label>
+						<input type="radio" name="memberLevel" id="np" value="NP Membership is for non profit organizations and there is no fee" checked>
+
+						<label for="bronze">Bronze: $5</label>
+						<input type="radio" name="memberLevel" id="bronze" value="Bronze Membership">
+
+						<label for="silver">Silver: $10</label>
+						<input type="radio" name="memberLevel" id="silver" value="Silver Membership">
+
+						<label for="gold">Gold: $15</label>
+						<input type="radio" name="memberLevel" id="gold" value="Gold Membership">
+
+					</div>
+
+					<div class="benefits__descriptions">
+						<ul>
+							<li>This membership level is specifically designed for non-profit organizations and offers various benefits tailored to their needs. The specific benefits would depend on the organization providing the membership, but they may include access to resources, networking opportunities, training programs, fundraising assistance, and support services.</li>
+							<li>Bronze membership typically offers a basic level of benefits, which may include access to certain resources, discounts on services or products, limited networking opportunities, and possibly some level of support from the organization.</li>
+							<li>Silver membership often provides enhanced benefits compared to the bronze level. These benefits may include increased access to resources, higher discounts, expanded networking opportunities, priority support, and additional perks specific to the organization or industry.</li>
+							<li>Gold membership typically offers the highest level of benefits and privileges. These benefits may include exclusive access to premium resources, significant discounts or special offers, VIP networking events, priority support with dedicated account managers, advanced training programs, and other exclusive perks tailored to the organization or industry.</li>
+						</ul>
+					</div>
+				</fieldset>
+			</div>
+			<input type="hidden" name="timestamp" id="timestamp" value="">
+			<button type="submit">Submit</button>
+		</form>
+
+
+	</main>
+
+	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d47544.934118489524!2d-119.14590335970065!3d46.234729175287235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1684895102058!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+	<footer>
+		<p>&copy; <span class="current-year">2023</span> Abraham Jimenez United States 🇺🇸</p>
+		<p id="lastModified"></p>
+	</footer>
+
+</body>
+
+</html>

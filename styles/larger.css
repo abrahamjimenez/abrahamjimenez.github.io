@@ -1,7 +1,7 @@
 @media (min-width: 800px) {
 
 	/* html selectors */
-	
+
 	nav ul li {
 		text-align: center;
 		padding: 8px;
@@ -51,15 +51,26 @@
 	#menu {
 		display: none;
 	}
-	
+
 	/* discover.html */
 	.discover {
 		display: grid;
 		gap: 8px;
 		grid-template-columns: 1fr 2fr;
 	}
-	
+
 	.aside__2 {
 		margin-bottom: 4px;
 	}
+
+	/* --- join.html --- */
+	/* selectors */
+
+	/* class */
+	.benefits--container fieldset {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	/* id */
 }

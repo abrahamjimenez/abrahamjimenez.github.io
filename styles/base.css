@@ -263,3 +263,42 @@ footer p {
 #dark.darkMode {
 	background-color: black;
 }
+
+/* --- join.html --- */
+/* selectors */
+
+/* class */
+
+/* id */
+#joinForm {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+#joinForm fieldset {
+	padding: 16px;
+}
+
+#joinForm label:hover,
+#joinForm input:hover {
+	cursor: pointer;
+}
+
+#joinForm fieldset input {
+	display: block;
+	margin: 8px 0;
+	border: 1px solid black;
+}
+
+#joinForm fieldset input:required {
+	border-left: 4px solid red;
+}
+
+#joinForm fieldset input:required:valid {
+	border-left: 4px solid green;
+}
+
+#joinForm li {
+	list-style: disc;
+}
