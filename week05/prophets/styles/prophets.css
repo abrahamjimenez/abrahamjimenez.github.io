@@ -1,0 +1,40 @@
+/* global */
+
+/* selectors */
+section {
+	background-color: #c1c0aa;
+	border: 1px solid black;
+	padding-bottom: 16px;
+}
+
+h1,
+h2 {
+	text-align: center;
+}
+
+img {
+	display: block;
+	margin: auto;
+	box-shadow: 0 0 8px 1px black;
+	
+	height: auto;
+	width: 90%;
+}
+
+footer {
+	text-align: center;
+}
+
+/* classes */
+
+/* id's */
+#cards {
+	display: grid;
+	gap: 8px;
+}
+
+@media only screen and (min-width: 750px) {
+	#cards {
+		grid-template-columns: 1fr 1fr
+	}
+}
