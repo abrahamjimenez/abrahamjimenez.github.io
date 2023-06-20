@@ -176,7 +176,11 @@ footer p {
 	padding: 8px;
 }
 
-/* discover.html */
+.weather {
+	text-align: center;
+}
+
+/* ---------- discover.html ------------- */
 .discover {
 	display: grid;
 	gap: 8px;
@@ -264,7 +268,12 @@ footer p {
 	background-color: black;
 }
 
-/* --- join.html --- */
+#page-visits {
+	text-align: center;
+	padding-top: 8px;
+}
+
+/* ------------ join.html --------------- */
 /* selectors */
 
 /* class */
