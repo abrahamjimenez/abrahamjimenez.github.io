@@ -1,0 +1,71 @@
+{
+	"weeks": [{
+			"week": "Week 1",
+			"links": [{
+					"url": "week01/holygrail.html",
+					"title": "Holygrail"
+				},
+				{
+					"url": "week01/media-query.html",
+					"title": "Media Query"
+				},
+				{
+					"url": "week-1/chamber-site-plan.html",
+					"title": "Chamber Site Plan"
+				}
+			]
+		},
+		{
+			"week": "Week 2",
+			"links": [{
+					"url": "week02/bom.html",
+					"title": "Book of Mormon"
+				},
+				{
+					"url": "week02/design.html",
+					"title": "Design"
+				}
+			]
+		},
+		{
+			"week": "Week 3",
+			"links": [{
+					"url": "week03/bom.html",
+					"title": "Book of Mormon 2"
+				},
+				{
+					"url": "week03/lazyload.html",
+					"title": "Lazyload"
+				},
+				{
+					"url": "week03/reponsive-images.html",
+					"title": "Responsive Images"
+				}
+			]
+		},
+		{
+			"week": "Week 4",
+			"links": [{
+					"url": "week04/form.html",
+					"title": "Form"
+				},
+				{
+					"url": "week04/tablebuild.html",
+					"title": "Table"
+				}
+			]
+		},
+		{
+			"week": "Week 5",
+			"links": [{
+					"url": "week05/prophets/prophets.html",
+					"title": "Form"
+				},
+				{
+					"url": "week05/weatherAPI/weather.html",
+					"title": "Weather API"
+				}
+			]
+		}
+	]
+}
