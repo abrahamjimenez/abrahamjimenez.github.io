@@ -64,7 +64,11 @@
 				{
 					"url": "week05/weatherAPI/weather.html",
 					"title": "Weather API"
-				}
+				},
+				{
+					"url": "chamber/directory.html",
+					"title": "Directory"
+				},
 			]
 		}
 	]
