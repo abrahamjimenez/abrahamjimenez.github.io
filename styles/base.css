@@ -379,7 +379,7 @@ footer p {
 }
 
 .list--view .company--container:nth-child(even) {
-	background-color: rgb(213, 213, 213);
+	background-color: var(--color-2);
 }
 
 .list--view .companyName {
