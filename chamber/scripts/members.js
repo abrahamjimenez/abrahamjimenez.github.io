@@ -7,7 +7,7 @@ async function apiFetch() {
 	displayData(data);
 }
 
-const directoryContainer = document.querySelector(".directory--container");
+const directoryContainer = document.querySelector(".card--view");
 
 function displayData(data) {
 	const companies = data.companies
@@ -25,7 +25,12 @@ function displayData(data) {
 		const image = document.createElement("img");
 		image.src = `images/${companyImage}`;
 		image.alt = company.name
-				
+		
+		// Company Name Creation
+		const nameParagraph = document.createElement("p");
+		nameParagraph.textContent = companyName;
+		nameParagraph.classList = "companyName";
+		
 		// Company Address Creation
 		const addressParagraph = document.createElement("p");
 		addressParagraph.textContent = companyAddress;
@@ -37,7 +42,7 @@ function displayData(data) {
 		// Company Website Creation		
 		const websiteLink = document.createElement("a");
 		websiteLink.href = companyWebsite;
-		websiteLink.textContent = companyName;
+		websiteLink.textContent = companyWebsite;
 
 		// Div Element Creation
 		const div = document.createElement("div");
@@ -45,6 +50,7 @@ function displayData(data) {
 		div.appendChild(image)
 
 		// Add Paragraphs company container
+		div.appendChild(nameParagraph); // Name
 		div.appendChild(addressParagraph); // Address
 		div.appendChild(phoneParagraph); // Phone
 		div.appendChild(websiteLink); // Website
