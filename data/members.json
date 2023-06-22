@@ -1,0 +1,66 @@
+{
+	"companies": [{
+			"name": "Google",
+			"address": "1600 Amphitheatre Parkway, Mountain View, CA 94043, USA",
+			"phone": "+1 650-253-0000",
+			"website": "https://www.google.com",
+			"image": "google.png",
+			"membershipLevel": "Platinum",
+			"otherInfo": "Google is a multinational technology company specializing in Internet-related services and products."
+		},
+		{
+			"name": "Amazon",
+			"address": "410 Terry Ave N, Seattle, WA 98109, USA",
+			"phone": "+1 206-266-1000",
+			"website": "https://www.amazon.com",
+			"image": "amazon.png",
+			"membershipLevel": "Gold",
+			"otherInfo": "Amazon is an American multinational technology company focusing on e-commerce, cloud computing, and artificial intelligence."
+		},
+		{
+			"name": "Twitter",
+			"address": "1355 Market St #900, San Francisco, CA 94103, USA",
+			"phone": "+1 415-222-9670",
+			"website": "https://www.twitter.com",
+			"image": "twitter.png",
+			"membershipLevel": "Silver",
+			"otherInfo": "Twitter is a social media platform that allows users to send and read short messages called tweets."
+		},
+		{
+			"name": "Microsoft",
+			"address": "One Microsoft Way, Redmond, WA 98052, USA",
+			"phone": "+1 425-882-8080",
+			"website": "https://www.microsoft.com",
+			"image": "microsoft.png",
+			"membershipLevel": "Platinum",
+			"otherInfo": "Microsoft is a multinational technology corporation known for its software, hardware, and services."
+		},
+		{
+			"name": "Apple",
+			"address": "1 Apple Park Way, Cupertino, CA 95014, USA",
+			"phone": "+1 408-996-1010",
+			"website": "https://www.apple.com",
+			"image": "apple.png",
+			"membershipLevel": "Gold",
+			"otherInfo": "Apple is a technology company that designs, manufactures, and sells consumer electronics and software."
+		},
+		{
+			"name": "Facebook",
+			"address": "1 Hacker Way, Menlo Park, CA 94025, USA",
+			"phone": "+1 650-308-7300",
+			"website": "https://www.facebook.com",
+			"image": "facebook.png",
+			"membershipLevel": "Silver",
+			"otherInfo": "Facebook is a social networking platform where users can connect and share content with others."
+		},
+		{
+			"name": "Netflix",
+			"address": "100 Winchester Cir, Los Gatos, CA 95032, USA",
+			"phone": "+1 408-540-3700",
+			"website": "https://www.netflix.com",
+			"image": "netflix.png",
+			"membershipLevel": "Bronze",
+			"otherInfo": "Netflix is a streaming service that offers a wide variety of TV shows, movies, and documentaries."
+		}
+	]
+}
