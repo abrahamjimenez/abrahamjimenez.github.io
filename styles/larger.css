@@ -78,4 +78,9 @@
 	.card--view {
 		grid-template-columns: 1fr 1fr;
 	}
+	
+	.list--view .company--container  {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
 }
