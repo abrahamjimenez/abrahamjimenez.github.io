@@ -180,7 +180,7 @@ footer p {
 	text-align: center;
 }
 
-/* ---------- discover.html ------------- */
+/* ------------------------------ discover.html ------------------------------ */
 .discover {
 	display: grid;
 	gap: 8px;
@@ -277,7 +277,7 @@ footer p {
 	padding: 4px;
 }
 
-/* ------------ join.html --------------- */
+/* ------------------------------ join.html ------------------------------ */
 /* selectors */
 
 /* class */
@@ -315,3 +315,29 @@ footer p {
 #joinForm li {
 	list-style: disc;
 }
+
+/* ------------------------------ directory.html ------------------------------ */
+/* selectors */
+
+/* classes */
+.directory--container {
+	display: grid;
+	gap: 16px;
+}
+
+.company--container {
+	box-shadow: 0 4px 8px rgb(158, 158, 158);
+	height: 250px;
+	display: flex;
+	gap: 8px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.company--container img {
+	width: 20vw;
+	max-width: 125px;
+}
+
+/* ids */
