@@ -320,6 +320,12 @@ footer p {
 /* selectors */
 
 /* classes */
+.card--view,
+.list--view {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
 .card--view {
 	display: grid;
 	gap: 16px;
