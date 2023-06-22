@@ -326,6 +326,10 @@ footer p {
 	margin: 0 auto;
 }
 
+.company--container {
+	text-align: center;
+}
+
 .card--view {
 	display: grid;
 	gap: 16px;
