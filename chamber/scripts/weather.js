@@ -51,12 +51,12 @@ function displayForecast(data) {
     // console.log(date.getDate());
     // console.log(date.getHours()); // TDODO: Get 6!
     const hours = date.getHours();
-	
-	// This will get all 6 hours AND 3 days!
-	if (hours == 6 && dayCounter < 3) {
-		dayCounter ++;
-		console.log(hours)
-	}
+
+    // This will get all 6 hours AND 3 days!
+    if (hours == 6 && dayCounter < 3) {
+      dayCounter++;
+      console.log(hours);
+    }
     // console.log(formattedDate)
   });
 }

@@ -1,134 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pasco Chamber of Commerce</title>
+    <meta
+      name="description"
+      content="Pasco Washington chamber of commerce. Website to meet and greet in Pasco, Wa or Tri-Cities Washington"
+    />
+    <meta name="author" content="Abraham Jimenez" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- Social media -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:card" content="" />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poltawski+Nowy&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.Cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Scripts -->
+    <script src="scripts/icons.js" defer></script>
+    <script src="../scripts/hamburger.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Pasco Chamber of Commerce</title>
-	<meta name="description" content="Pasco Washington chamber of commerce. Website to meet and greet in Pasco, Wa or Tri-Cities Washington">
-	<meta name="author" content="Abraham Jimenez">
-	<!-- Styles -->
-	<link rel="stylesheet" href="styles/normalize.css">
-	<link rel="stylesheet" href="styles/base.css">
-	<link rel="stylesheet" href="styles/larger.css">
-	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
-	<!-- Social media -->
-	<meta property="og:title" content="">
-	<meta property="og:type" content="">
-	<meta property="og:url" content="">
-	<meta property="og:image" content="">
-	<meta name="twitter:title" content="">
-	<meta name="twitter:description" content="">
-	<meta name="twitter:image" content="">
-	<meta name="twitter:card" content="">
-	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poltawski+Nowy&display=swap" rel="stylesheet">
-	<!-- Font awesome -->
-	<link rel="stylesheet" href="https://cdnjs.Cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- Scripts -->
-	<script src="scripts/icons.js" defer></script>
-	<script src="../scripts/hamburger.js" defer></script>
-	<script src="scripts/weather.js" defer></script>
-</head>
+  <body>
+    <header>
+      <h1>Pasco Chamber of Commerce</h1>
+      <button id="menu"></button>
+      <nav>
+        <ul class="navigation">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-	<header>
-		<h1>Pasco Chamber of Commerce</h1>
-		<button id="menu"></button>
-		<nav>
-			<ul class="navigation">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Events</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
+    <main>
+      <div class="hero">
+        <img src="images/hero.jpg" height="400" alt="Community Park" />
+        <a href="#" class="join">Join for free</a>
+      </div>
 
-	<main>
-		<div class="hero">
-			<img src="images/hero.jpg" height="400" alt="Community Park">
-			<a href="#" class="join">Join for free</a>
-		</div>
+      <h2>Weather</h2>
+      <div class="weather">
+        <img
+          src="images/weather.jpg"
+          height="400"
+          alt="Lightning on a cloudy day"
+        />
+        <section class="weather__card">
+          <h3 class="weather-location"></h3>
+          <p class="current-temp"></p>
+          <p class="weather-desc"></p>
+          <figure>
+            <img id="weather-icon" src="#" alt="#" />
+            <figcaption></figcaption>
+          </figure>
+          <!-- TODO: Figcaption -->
+        </section>
+      </div>
 
-		<h2>Weather</h2>
-		<div class="weather">
-			<img src="images/weather.jpg" height="400" alt="Lightning on a cloudy day">
-			<section class="weather__card">
-				<h3 class="weather-location"></h3>
-				<p class="current-temp"></p>
-				<p class="weather-desc"></p>
-				<figure>
-					<img id="weather-icon" src="#" alt="#">
-					<figcaption></figcaption>
-				</figure>
-				<!-- TODO: Figcaption -->
-			</section>
-		</div>
+      <section class="news">
+        <h2>Latest News</h2>
+        <div class="news__card">
+          <img
+            src="images/news-1.jpg"
+            height="260"
+            alt="Man looking at newspapers"
+          />
+        </div>
+        <div class="news__card">
+          <img
+            src="images/news-2.jpg"
+            height="260"
+            alt="Phone with news articles"
+          />
+        </div>
+      </section>
 
-		<section class="news">
-			<h2>Latest News</h2>
-			<div class="news__card">
-				<img src="images/news-1.jpg" height="260" alt="Man looking at newspapers">
-			</div>
-			<div class="news__card">
-				<img src="images/news-2.jpg" height="260" alt="Phone with news articles">
-			</div>
-		</section>
+      <h2>Events</h2>
+      <section class="events">
+        <img src="images/events.jpg" alt="" height="400" />
+        <div class="events__card">
+          <h3>Join us for the city dinner</h3>
+        </div>
+      </section>
 
+      <section class="spotlights">
+        <h2>Spotlights</h2>
+        <section class="spotlight__1 spotlight__container">
+          <h3>Advertisement 1</h3>
+          <div class="ad"></div>
+        </section>
+        <section class="spotlight__2 spotlight__container">
+          <h3>Advertisement 2</h3>
+          <div class="ad"></div>
+        </section>
+        <section class="spotlight__3 spotlight__container">
+          <h3>Advertisement 3</h3>
+          <div class="ad"></div>
+        </section>
+      </section>
 
-		<h2>Events</h2>
-		<section class="events">
-			<img src="images/events.jpg" alt="" height="400">
-			<div class="events__card">
-				<h3>Join us for the city dinner</h3>
-			</div>
-		</section>
+      <section class="information">
+        <h2>More Information</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam tempore
+          beatae ducimus, rerum ipsum quae nostrum velit ratione aliquam
+          corporis?
+        </p>
+      </section>
+    </main>
 
-		<section class="spotlights">
-			<h2>Spotlights</h2>
-			<section class="spotlight__1 spotlight__container">
-				<h3>Advertisement 1</h3>
-				<div class="ad"></div>
-			</section>
-			<section class="spotlight__2 spotlight__container">
-				<h3>Advertisement 2</h3>
-				<div class="ad"></div>
-			</section>
-			<section class="spotlight__3 spotlight__container">
-				<h3>Advertisement 3</h3>
-				<div class="ad"></div>
-			</section>
-		</section>
+    <footer id="footer">
+      <ul>
+        <li>Local Chambers of Commerce</li>
+        <li><a href="#footer">Local Chambers of Commerce</a></li>
+        <li><a href="#footer">Hispanic Chamber of Commerce</a></li>
+        <li><a href="#footer">West Richland Chamber of Commerce</a></li>
+        <li><a href="#footer">Benton City Chamber of Commerce</a></li>
+        <li><a href="#footer">Hermiston Chamber of Commerce</a></li>
+        <li><a href="#footer">Walla Walla Chamber of Commerce</a></li>
+      </ul>
 
-		<section class="information">
-			<h2>More Information</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam tempore beatae ducimus, rerum ipsum quae nostrum velit ratione aliquam corporis?</p>
-		</section>
-
-
-
-	</main>
-
-	<footer id="footer">
-		<ul>
-			<li>Local Chambers of Commerce</li>
-			<li><a href="#footer">Local Chambers of Commerce</a></li>
-			<li><a href="#footer">Hispanic Chamber of Commerce</a></li>
-			<li><a href="#footer">West Richland Chamber of Commerce</a></li>
-			<li><a href="#footer">Benton City Chamber of Commerce</a></li>
-			<li><a href="#footer">Hermiston Chamber of Commerce</a></li>
-			<li><a href="#footer">Walla Walla Chamber of Commerce</a></li>
-		</ul>
-
-		<div class="icons--container">
-			<a href="#footer"><i class="fa fa-brands fa-facebook fa-xl" style="color: #255ab6;"></i></a>
-			<a href="#footer"><i class="fa fa-brands fa-instagram fa-xl" style="color: #ca2fa4;"></i></a>
-			<a href="#footer"><i class="fa fa-brands fa-twitter fa-xl" style="color: #3aaacf;"></i></a>
-			<a href="#footer"><i class="fa fa-solid fa-envelope fa-xl" style="color: #d62929;"></i></a>
-		</div>
-	</footer>
-</body>
-
+      <div class="icons--container">
+        <a href="#footer"
+          ><i class="fa fa-brands fa-facebook fa-xl" style="color: #255ab6"></i
+        ></a>
+        <a href="#footer"
+          ><i class="fa fa-brands fa-instagram fa-xl" style="color: #ca2fa4"></i
+        ></a>
+        <a href="#footer"
+          ><i class="fa fa-brands fa-twitter fa-xl" style="color: #3aaacf"></i
+        ></a>
+        <a href="#footer"
+          ><i class="fa fa-solid fa-envelope fa-xl" style="color: #d62929"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
 </html>

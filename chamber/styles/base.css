@@ -1,21 +1,20 @@
 /* global */
 * {
-	padding: 0;
-	margin: 0;
-
+  padding: 0;
+  margin: 0;
 }
 
 :root {
-	--color-heading: #3A5427;
-	--color-paragraph: #1f1e00;
-	--color-background-1: #FFD773;
-	--color-background-2: #F4A261;
-	--color-background-3: #FF8473;
+  --color-heading: #3a5427;
+  --color-paragraph: #1f1e00;
+  --color-background-1: #ffd773;
+  --color-background-2: #f4a261;
+  --color-background-3: #ff8473;
 
-	/* headings */
-	--font-heading: 'Poltawski Nowy', serif;
-	/* paragraphs */
-	--font-paragraph: 'Open Sans', sans-serif;
+  /* headings */
+  --font-heading: 'Poltawski Nowy', serif;
+  /* paragraphs */
+  --font-paragraph: 'Open Sans', sans-serif;
 }
 
 h1,
@@ -24,315 +23,311 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: var(--font-heading);
-	color: var(--color-heading);
+  font-family: var(--font-heading);
+  color: var(--color-heading);
 }
 
 html {
-	overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 body {
-	background-color: var(--color-background-1);
+  background-color: var(--color-background-1);
 }
 
 p {
-	font-family: var(--font-paragraph);
-	color: var(--color-paragraph)
+  font-family: var(--font-paragraph);
+  color: var(--color-paragraph);
 }
 
 /* elements */
 header {
-	display: grid;
+  display: grid;
 }
 
 h1 {
-	text-align: center;
+  text-align: center;
 }
 
 h2 {
-	padding: 16px 0 0 0;
+  padding: 16px 0 0 0;
 }
 
 h2,
 p {
-	margin-left: 24px;
+  margin-left: 24px;
 }
 
 nav {
-	display: block;
-	text-align: center;
+  display: block;
+  text-align: center;
 }
 
 nav a {
-	text-decoration: none;
-	color: var(--color-paragraph)
+  text-decoration: none;
+  color: var(--color-paragraph);
 }
 
 nav a:hover {
-	color: var(--color-heading);
-	text-decoration: underline;
+  color: var(--color-heading);
+  text-decoration: underline;
 }
 
 nav li {
-	padding: 8px;
+  padding: 8px;
 }
 
 img {
-	height: auto;
-	width: 100%;
-	border: 1px solid var(--color-heading);
-	border-radius: 8px;
-
+  height: auto;
+  width: 100%;
+  border: 1px solid var(--color-heading);
+  border-radius: 8px;
 }
 
 main {
-	display: grid;
-	grid-template-rows: auto;
+  display: grid;
+  grid-template-rows: auto;
 
-	margin: auto;
+  margin: auto;
 }
 
 footer,
 header {
-	background-color: var(--color-background-2)
+  background-color: var(--color-background-2);
 }
 
 footer {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 footer ul,
 footer li {
-	font-size: 8px;
+  font-size: 8px;
 }
 
 footer ul li:nth-child(1) {
-	margin-top: 8px;
-	font-size: 2em;
-	font-weight: bold;
+  margin-top: 8px;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 footer ul li {
-	list-style-type: none;
-	margin-left: 16px;
-	padding: 2px 0;
+  list-style-type: none;
+  margin-left: 16px;
+  padding: 2px 0;
 }
 
 footer a {
-	text-decoration: none;
-	color: var(--color-paragraph);
-	font-size: 1.5em;
+  text-decoration: none;
+  color: var(--color-paragraph);
+  font-size: 1.5em;
 }
 
 footer a:hover {
-	text-decoration: underline;
-	color: var(--color-heading);
+  text-decoration: underline;
+  color: var(--color-heading);
 }
 
 footer a {
-	text-align: center;
-	cursor: pointer;
-	margin: auto;
+  text-align: center;
+  cursor: pointer;
+  margin: auto;
 }
 
 footer i {
-	border: 1px solid black;
-	border-radius: 50%;
-	padding: 5px;
-	width: 25px;
-	height: 25px;
-
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 5px;
+  width: 25px;
+  height: 25px;
 }
 
 footer i:hover {
-	background-color: var(--color-background-1);
+  background-color: var(--color-background-1);
 }
 
 /* class */
 .hero img {
-	display: block;
-	margin: auto;
-	width: 96%;
-	max-width: 800px;
+  display: block;
+  margin: auto;
+  width: 96%;
+  max-width: 800px;
 }
 
 .hero {
-	position: relative;
+  position: relative;
 }
 
 .join {
-	padding: 16px 32px;
-	position: absolute;
-	transform: translate(-50%, -50%);
-	top: 50%;
-	left: 50%;
-	background-color: var(--color-background-1);
-	border: 1px solid var(--color-paragraph);
-	border-radius: 8px;
-	text-decoration: none;
-	color: var(--color-paragraph);
-	font-size: 24px;
+  padding: 16px 32px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  background-color: var(--color-background-1);
+  border: 1px solid var(--color-paragraph);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--color-paragraph);
+  font-size: 24px;
 }
 
 .join:hover {
-	background-color: var(--color-background-3);
-
+  background-color: var(--color-background-3);
 }
 
 .weather {
-	margin: 16px auto 0 auto;
-	position: relative;
+  margin: 16px auto 0 auto;
+  position: relative;
 }
 
 .weather img {
-	width: 90%;
-	display: block;
-	margin: auto;
+  width: 90%;
+  display: block;
+  margin: auto;
 }
 
 .weather__card {
-	position: absolute;
-	border: 1px solid var(--color-paragraph);
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	height: 64%;
-	width: 64%;
-	opacity: 0.75;
-	background-color: white;
-	text-align: center;
-	border-radius: 16px;
+  position: absolute;
+  border: 1px solid var(--color-paragraph);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 64%;
+  width: 64%;
+  opacity: 0.75;
+  background-color: white;
+  text-align: center;
+  border-radius: 16px;
 }
 
 .weather__card p {
-	margin: 0;
+  margin: 0;
 }
 
 .weather__card:hover {
-	opacity: .8;
+  opacity: 0.8;
 }
 
 .news {
-	display: grid;
-	gap: 16px;
+  display: grid;
+  gap: 16px;
 }
 
 .news__card img {
-	display: block;
-	width: 80%;
-	max-width: 800px;
-	margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
 }
 
 .events {
-	position: relative;
-	width: 96%;
-	max-width: 800px;
-	display: block;
-	margin: 16px auto auto auto;
+  position: relative;
+  width: 96%;
+  max-width: 800px;
+  display: block;
+  margin: 16px auto auto auto;
 }
 
 .events img {
-	display: block;
-	margin: auto;
+  display: block;
+  margin: auto;
 }
 
 .events__card {
-	position: absolute;
-	border: 1px solid var(--color-paragraph);
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	height: 64%;
-	width: 64%;
-	opacity: 0.75;
-	background-color: white;
-	text-align: center;
-	border-radius: 16px;
+  position: absolute;
+  border: 1px solid var(--color-paragraph);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 64%;
+  width: 64%;
+  opacity: 0.75;
+  background-color: white;
+  text-align: center;
+  border-radius: 16px;
 }
 
 .events__card:hover {
-	opacity: 0.8;
+  opacity: 0.8;
 }
 
 .spotlights {
-	height: 100%;
-	display: grid;
+  height: 100%;
+  display: grid;
 }
 
 .spotlights h2 {
-	margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .spotlight__container h3 {
-	padding: 8px 16px;
-	text-align: center;
+  padding: 8px 16px;
+  text-align: center;
 }
 
 .ad {
-	display: block !important;
-	background-color: white;
-	border: 1px solid black;
-	width: 96%;
-	height: 200px;
-	display: block;
-	margin: auto;
-	border-radius: 8px;
-	max-width: 800px;
+  display: block !important;
+  background-color: white;
+  border: 1px solid black;
+  width: 96%;
+  height: 200px;
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+  max-width: 800px;
 }
 
 .information p {
-	padding: 8px 16px;
+  padding: 8px 16px;
 }
 
 .icons--container {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	align-items: flex-start;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: flex-start;
 }
 
 .icons--container .fa {
-	font-size: 1em;
+  font-size: 1em;
 }
 
 /* id */
 
 .navigation {
-	display: none;
+  display: none;
 }
 
 .navigation.open {
-	display: block;
+  display: block;
 }
 
 #menu {
-	background-color: var(--color-background-1);
-	border: 1px solid var(--color-paragraph);
-	border-radius: 8px;
-	
-	padding: 8px;
-	width: 40px;
-	display: block;
-	margin: auto 0 auto auto;
+  background-color: var(--color-background-1);
+  border: 1px solid var(--color-paragraph);
+  border-radius: 8px;
+
+  padding: 8px;
+  width: 40px;
+  display: block;
+  margin: auto 0 auto auto;
 }
 
 #menu.open {
-	background-color: var(--color-background-3);
+  background-color: var(--color-background-3);
 }
 
 #menu::before {
-	content: "☰";
+  content: '☰';
 }
 
 #menu.open::before {
-	content: "X";
+  content: 'X';
 }
 
 #weather-icon {
-	background-color: rgb(0, 0, 0);
-	width: 12vw;
-	height: 12vw;
+  background-color: rgb(0, 0, 0);
+  width: 12vw;
+  height: 12vw;
 }
