@@ -330,3 +330,9 @@ footer i:hover {
 #menu.open::before {
 	content: "X";
 }
+
+#weather-icon {
+	background-color: rgb(0, 0, 0);
+	width: 12vw;
+	height: 12vw;
+}

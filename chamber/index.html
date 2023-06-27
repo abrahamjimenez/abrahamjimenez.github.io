@@ -28,7 +28,8 @@
 	<link rel="stylesheet" href="https://cdnjs.Cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Scripts -->
 	<script src="scripts/icons.js" defer></script>
-	<script src="scripts/hamburger.js" defer></script>
+	<script src="../scripts/hamburger.js" defer></script>
+	<script src="scripts/weather.js" defer></script>
 </head>
 
 <body>
@@ -55,9 +56,14 @@
 		<div class="weather">
 			<img src="images/weather.jpg" height="400" alt="Lightning on a cloudy day">
 			<section class="weather__card">
-				<h3 class="location">Pasco, Wa</h3>
-				<p>30 F</p>
-				<p>Cloudy with a chance of rain</p>
+				<h3 class="weather-location"></h3>
+				<p class="current-temp"></p>
+				<p class="weather-desc"></p>
+				<figure>
+					<img id="weather-icon" src="#" alt="#">
+					<figcaption></figcaption>
+				</figure>
+				<!-- TODO: Figcaption -->
 			</section>
 		</div>
 
