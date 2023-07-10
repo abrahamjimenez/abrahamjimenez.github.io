@@ -91,4 +91,33 @@ header {
   margin-top: 8px;
   margin-bottom: 4px;
 }
+
+.section--content {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-rows: 24px auto 8px auto 16px auto auto;
+  background-color: var(--background--1);
+  padding: 0 24px;
+  height: 1000px;
+}
+
+.section--content h2 {
+  grid-row: 2/3;
+}
+
+.section--content p {
+  grid-row: 4/5 ;
+}
+
+.section--content .image--container {
+  grid-row: 6/7;
+}
+
+.section--content .image--container img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}
+
 /* id */
