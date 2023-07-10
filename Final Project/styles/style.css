@@ -1,0 +1,44 @@
+/* Global */
+:root {
+  --background--1: #ebeadf;
+  --background--2: #243328;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Selectos */
+header {
+  background-color: var(--background--1);
+}
+
+/* Classes */
+.header--container {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.fa-bars {
+  padding: 8px;
+}
+
+.shopping--cart {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 8px;
+}
+
+.banner {
+  background-color: var(--background--2);
+  color: #ffffff;
+  padding: 24px;
+  text-align: center;
+}
+
+/* id */
