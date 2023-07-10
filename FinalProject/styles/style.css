@@ -70,4 +70,25 @@ header {
   max-width: 400px;
 }
 
+.products--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.products--container img {
+  width: 300px;
+}
+
+.product {
+  text-decoration: none;
+  color: #000000;
+}
+
+.product__content h4 {
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
 /* id */
