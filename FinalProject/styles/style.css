@@ -7,6 +7,7 @@
 * {
   padding: 0;
   margin: 0;
+  line-height: 1.5;
 }
 
 /* Selectos */
@@ -92,13 +93,18 @@ header {
   margin-bottom: 4px;
 }
 
+.sections--containers {
+  background-color: var(--background--1);
+  padding: 0 24px;
+}
+
 .section {
   display: grid;
   align-items: center;
   justify-content: center;
   grid-template-rows: 24px auto 8px auto 16px auto auto;
-  background-color: var(--background--1);
-  padding: 0 48px;
+  max-width: 400px;
+  margin: auto;
 }
 
 .section h2 {
@@ -122,9 +128,8 @@ header {
   max-width: 400px;
 }
 
-/* TODO: fix */
-.section2 .image--container {
-  justify-self: center;
+.section2 {
+  padding-bottom: 24px;
 }
 
 .section2 .image--container {
@@ -137,6 +142,47 @@ header {
 .section2 .image--container img {
   width: 100%;
   height: 100%;
+}
+
+.reviews {
+  display: grid;
+  grid-template-rows: 24px auto 8px auto 16px auto 32px;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+.reviews h3 {
+  grid-row: 2/3;
+}
+
+.reviews .review1 {
+  grid-row: 4/5;
+}
+
+.reviews .review2 {
+  grid-row: 6/7;
+}
+
+.policies--container {
+  margin: 0 24px 64px 24px;
+}
+
+.policies {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background--1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.delivery--policy,
+.refund--policy {
+  padding: 16px;
+  display: grid;
+  grid-template-rows: 24px 24px auto;
 }
 
 /* id */
