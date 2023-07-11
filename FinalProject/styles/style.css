@@ -15,6 +15,13 @@ header {
   background-color: var(--background--1);
 }
 
+iframe {
+  justify-self: center;
+  height: 250px;
+  width: 100%;
+  max-width: 1200px;
+}
+
 /* Classes */
 .header--container {
   display: grid;
@@ -185,4 +192,60 @@ header {
   grid-template-rows: 24px 24px auto;
 }
 
+.footer--container {
+  color: #ffffff;
+  background-color: var(--background--2);
+  display: grid;
+  align-items: center;
+  padding: 32px 16px;
+}
+
+.footer--container h4 {
+  padding: 16px 0;
+}
+
+.footer--container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer--container a {
+  text-decoration: none;
+  color: white;
+}
+
+.info--container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact--info a {
+  display: block;
+}
+
+.social--media--container {
+  display: flex;
+  gap: 16px;
+  margin: 16px 0 32px 8px;
+}
+
+.social--media--container i {
+  font-size: 1.5em;
+}
+
 /* id */
+#email {
+  padding: 16px 8px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+#submit {
+  background-color: #2e994d;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 8px;
+  width: 144px;
+}
