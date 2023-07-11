@@ -13,13 +13,19 @@
 /* Selectos */
 header {
   background-color: var(--background--1);
+  position: sticky;
+  top: 0;
+  box-shadow: 0 0 8px #000000;
+}
+
+footer {
+  background-color: var(--background--2);
 }
 
 iframe {
   justify-self: center;
   height: 250px;
   width: 100%;
-  max-width: 1200px;
 }
 
 /* Classes */
@@ -84,10 +90,12 @@ iframe {
   justify-content: center;
   align-items: center;
   gap: 16px;
+  margin: 32px 8px;
 }
 
 .products--container img {
-  width: 300px;
+  width: 100%;
+  height: auto;
 }
 
 .product {
@@ -194,10 +202,11 @@ iframe {
 
 .footer--container {
   color: #ffffff;
-  background-color: var(--background--2);
   display: grid;
   align-items: center;
   padding: 32px 16px;
+  max-width: 400px;
+  margin: auto;
 }
 
 .footer--container h4 {

@@ -10,6 +10,8 @@
     <!-- Styles -->
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/tablet.css" />
+    <link rel="stylesheet" href="styles/laptop.css" />
     <!-- Scripts -->
     <script src="scripts/script.js" defer></script>
     <!-- Font awesome -->
@@ -40,7 +42,14 @@
       <h1>Abraham</h1>
       <p>Lorem ipsum dolor sit amet consectetur.</p>
       <div class="image--container">
-        <img src="images/hero.jpeg" alt="#" height="320" width="382" />
+        <picture>
+          <source media="(max-width: 500px)" srcset="images/hero-small.jpeg" />
+          <source
+            media="(max-width: 1000px)"
+            srcset="images/hero-medium.jpeg"
+          />
+          <img src="images/hero-large.jpeg" alt="#" width="500" height="250" />
+        </picture>
       </div>
     </section>
 
@@ -50,7 +59,22 @@
         <a href="#" class="product">
           <div class="product__content">
             <div class="image-wrapper">
-              <img src="images/product1.jpeg" alt="" />
+              <picture>
+                <source
+                  media="(max-width: 500px)"
+                  srcset="images/product1-small.jpeg"
+                />
+                <source
+                  media="(max-width: 1000px)"
+                  srcset="images/product1-medium.jpeg"
+                />
+                <img
+                  src="images/product1-large.jpeg"
+                  alt="#"
+                  width="500"
+                  height="250"
+                />
+              </picture>
             </div>
             <h4>Essential Oil Bundle</h4>
             <h5>14.99</h5>
@@ -59,7 +83,22 @@
         <a href="#" class="product">
           <div class="product__content">
             <div class="image-wrapper">
-              <img src="images/product2.jpeg" alt="" />
+              <picture>
+                <source
+                  media="(max-width: 500px)"
+                  srcset="images/product2-small.jpeg"
+                />
+                <source
+                  media="(max-width: 1000px)"
+                  srcset="images/product2-medium.jpeg"
+                />
+                <img
+                  src="images/product2-large.jpeg"
+                  alt="#"
+                  width="500"
+                  height="250"
+                />
+              </picture>
             </div>
             <h4>Essential Oil Diffuser</h4>
             <h5>29.99</h5>
@@ -68,7 +107,22 @@
         <a href="#" class="product">
           <div class="product__content">
             <div class="image-wrapper">
-              <img src="images/product3.jpeg" alt="" />
+              <picture>
+                <source
+                  media="(max-width: 500px)"
+                  srcset="images/product3-small.jpeg"
+                />
+                <source
+                  media="(max-width: 1000px)"
+                  srcset="images/product3-medium.jpeg"
+                />
+                <img
+                  src="images/product3-large.jpeg"
+                  alt="#"
+                  width="500"
+                  height="250"
+                />
+              </picture>
             </div>
             <h4>Essential Oil Dropper</h4>
             <h5>4.99</h5>
@@ -77,7 +131,22 @@
         <a href="#" class="product">
           <div class="product__content">
             <div class="image-wrapper">
-              <img src="images/product4.jpeg" alt="" />
+              <picture>
+                <source
+                  media="(max-width: 500px)"
+                  srcset="images/product4-small.jpeg"
+                />
+                <source
+                  media="(max-width: 1000px)"
+                  srcset="images/product4-medium.jpeg"
+                />
+                <img
+                  src="images/product4-large.jpeg"
+                  alt="#"
+                  width="500"
+                  height="250"
+                />
+              </picture>
             </div>
             <h4>Essential Oil Body Lotion</h4>
             <h5>14.99</h5>
@@ -86,7 +155,22 @@
         <a href="#" class="product">
           <div class="product__content">
             <div class="image-wrapper">
-              <img src="images/product5.jpeg" alt="" />
+              <picture>
+                <source
+                  media="(max-width: 500px)"
+                  srcset="images/product5-small.jpeg"
+                />
+                <source
+                  media="(max-width: 1000px)"
+                  srcset="images/product5-medium.jpeg"
+                />
+                <img
+                  src="images/product5-large.jpeg"
+                  alt="#"
+                  width="500"
+                  height="250"
+                />
+              </picture>
             </div>
             <h4>Essential Oil All Purpose Cleaner</h4>
             <h5>9.99</h5>
@@ -95,7 +179,22 @@
         <a href="#" class="product">
           <div class="product__content">
             <div class="image--container">
-              <img src="images/product6.jpeg" alt="" />
+              <picture>
+                <source
+                  media="(max-width: 500px)"
+                  srcset="images/product6-small.jpeg"
+                />
+                <source
+                  media="(max-width: 1000px)"
+                  srcset="images/product6-medium.jpeg"
+                />
+                <img
+                  src="images/product6-large.jpeg"
+                  alt="#"
+                  width="500"
+                  height="250"
+                />
+              </picture>
             </div>
             <h4>Aromatheray Candle</h4>
             <h5>14.99</h5>
@@ -114,7 +213,22 @@
           well-being.
         </p>
         <div class="image--container">
-          <img src="images/hero.jpeg" alt="#" height="320" width="382" />
+          <picture>
+            <source
+              media="(max-width: 500px)"
+              srcset="images/section1-small.jpeg"
+            />
+            <source
+              media="(max-width: 1000px)"
+              srcset="images/section1-medium.jpeg"
+            />
+            <img
+              src="images/section1-large.jpeg"
+              alt="#"
+              width="500"
+              height="250"
+            />
+          </picture>
         </div>
       </section>
       <section class="section section2">
@@ -125,18 +239,34 @@
           everything you need to look and feel your best.
         </p>
         <div class="image--container">
-          <img
-            src="images/section2_image1.jpeg"
-            alt="#"
-            height="320"
-            width="382"
-          />
-          <img
-            src="images/section2_image2.jpeg"
-            alt="#"
-            height="320"
-            width="382"
-          />
+          <picture>
+            <source
+              media="(max-width: 500px)"
+              srcset="images/section2_image1-small.jpeg"
+            />
+            <source
+              media="(max-width: 1000px)"
+              srcset="images/section2_image1-medium.jpeg"
+            />
+            <img
+              src="images/section2_image1-large.jpeg"
+              alt="#"
+            />
+          </picture>
+          <picture>
+            <source
+              media="(max-width: 500px)"
+              srcset="images/section2_image2-small.jpeg"
+            />
+            <source
+              media="(max-width: 1000px)"
+              srcset="images/section2_image2-medium.jpeg"
+            />
+            <img
+              src="images/section2_image2-large.jpeg"
+              alt="#"
+            />
+          </picture>
         </div>
       </section>
     </section>
@@ -185,7 +315,13 @@
         <h4>Subscribe to our newsletter</h4>
         <form action="#">
           <label for="email">Email address</label>
-          <input type="email" id="email" name="email" required placeholder="Your email address"/>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Your email address"
+          />
           <input type="submit" value="Subscribe" id="submit" />
         </form>
         <div class="info--container">
