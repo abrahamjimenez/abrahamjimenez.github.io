@@ -200,10 +200,16 @@ footer i:hover {
   background-color: white;
   text-align: center;
   border-radius: 16px;
+  display: grid;
 }
 
 .weather__card p {
   margin: 0;
+}
+
+.weather__card img {
+  width: 40px;
+  height: auto;
 }
 
 .weather__card:hover {

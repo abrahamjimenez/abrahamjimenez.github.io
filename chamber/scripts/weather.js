@@ -1,37 +1,9 @@
 const forecastUrl =
   'https://api.openweathermap.org/data/2.5/forecast?lat=43.82&lon=-111.79&appid=ce8e98408d5f839cb2ea42a22f473e5a';
-const url =
-  'https://api.openweathermap.org/data/2.5/weather?lat=43.82&lon=-111.79&units=imperial&appid=ce8e98408d5f839cb2ea42a22f473e5a';
 
 const weather = document.querySelector('.weather');
-const weatherLocation = document.querySelector('.weather-location');
-const currentTemp = document.querySelector('.current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
-
-async function apiFetch() {
-  const response = await fetch(url);
-  if (response.ok) {
-    const data = await response.json();
-
-    displayResults(data);
-    // console.log(data);
-  } else {
-    throw Error(await response.text());
-  }
-}
-
-function displayResults(data) {
-  currentTemp.innerHTML = `${data.main.temp}&deg;F`;
-  const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-  let desc = data.weather[0].description;
-  weatherIcon.setAttribute('src', iconsrc);
-  weatherIcon.setAttribute('alt', desc);
-  captionDesc.textContent = `${desc}`;
-  weatherLocation.textContent = data.name;
-}
-
-// apiFetch();
+const weatherSection = document.querySelector('.weather__card');
 
 async function forecastFetch() {
   const forecastResponse = await fetch(forecastUrl);
@@ -45,20 +17,63 @@ function displayForecast(data) {
   data.list.forEach((forecast) => {
     const secondsTime = forecast.dt;
     const millisecondsTime = secondsTime * 1000;
+    const temp = forecast.main.temp;
+    const icon = forecast.weather[0].icon;
+    const iconsrc = `https://openweathermap.org/img/w/${forecast.weather[0].icon}.png`;
+    const desc = forecast.weather[0].description;
+
+    const div = document.createElement('div');
+    const p = document.createElement('p');
+    const p2 = document.createElement('p');
+    const h3 = document.createElement('h3');
+    const image = document.createElement('img');
+
+    p.classList.add('weahter--desc');
+    p2.classList.add('weahter--temp');
+
     var date = new Date(millisecondsTime);
     const formattedDate = date.toLocaleString();
-
-    // console.log(date.getDate());
-    // console.log(date.getHours()); // TDODO: Get 6!
     const hours = date.getHours();
 
     // This will get all 6 hours AND 3 days!
     if (hours == 6 && dayCounter < 3) {
       dayCounter++;
-      console.log(hours);
+
+      const daysOfWeek = [
+        'Sunday',
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday',
+      ];
+
+      const currentDay = daysOfWeek[date.getDay()];
+
+      // todo: convert to kelvin -> fahrenheit
+      const fahrenheitTemperature = kelvinToFahrenheit(temp);
+      const roundedFahrenheitTemp = fahrenheitTemperature.toFixed(2);
+
+      p.textContent = desc;
+      p2.textContent = roundedFahrenheitTemp;
+      h3.textContent = currentDay;
+
+      image.setAttribute('src', iconsrc);
+      image.setAttribute('alt', desc);
+
+      div.appendChild(h3);
+      div.appendChild(p);
+      div.appendChild(p2);
+      div.appendChild(image);
+      weatherSection.appendChild(div);
     }
-    // console.log(formattedDate)
   });
+}
+
+function kelvinToFahrenheit(kelvin) {
+  const fahrenheit = (kelvin - 273.15) * (9 / 5) + 32;
+  return fahrenheit;
 }
 
 forecastFetch();
