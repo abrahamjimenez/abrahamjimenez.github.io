@@ -164,6 +164,7 @@ iframe {
 .products--container img {
   width: 100%;
   height: auto;
+  /* max-width: 400px; */
 }
 
 .product {
@@ -171,9 +172,13 @@ iframe {
   color: #000000;
 }
 
-.product__content h4 {
+.product__content h2 {
   margin-top: 8px;
   margin-bottom: 4px;
+}
+
+.gray {
+  color: #636363;
 }
 
 .sections--containers {
