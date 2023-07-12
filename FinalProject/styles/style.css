@@ -146,9 +146,10 @@ iframe {
 }
 
 .hero img {
-  width: 400px;
+  /* width: 400px; */
+  width: 100%;
+  max-width: 400px;
   height: auto;
-  /* max-width: 400px; */
 }
 
 .products--container {
@@ -161,7 +162,7 @@ iframe {
 }
 
 .products--container img {
-  width: 400px;
+  width: 100%;
   height: auto;
 }
 
@@ -236,7 +237,7 @@ iframe {
   padding: 0 24px;
 }
 
-.reviews h3 {
+.reviews h2 {
   grid-row: 2/3;
 }
 
