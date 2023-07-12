@@ -5,5 +5,11 @@
 		justify-items: center;
 		max-width: 1440px;
 		margin: 32px auto;
+		padding: 0 16px;
   }
+	
+	.products--container img {
+		width: 100%;
+		height: auto;
+	}
 }
