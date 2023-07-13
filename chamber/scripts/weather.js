@@ -51,7 +51,6 @@ function displayForecast(data) {
 
       const currentDay = daysOfWeek[date.getDay()];
 
-      // todo: convert to kelvin -> fahrenheit
       const fahrenheitTemperature = kelvinToFahrenheit(temp);
       const roundedFahrenheitTemp = fahrenheitTemperature.toFixed(2);
 
