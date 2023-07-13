@@ -56,7 +56,7 @@ function displayForecast(data) {
       const roundedFahrenheitTemp = fahrenheitTemperature.toFixed(2);
 
       p.textContent = desc;
-      p2.textContent = roundedFahrenheitTemp;
+      p2.textContent = roundedFahrenheitTemp + "°F";
       h3.textContent = currentDay;
 
       image.setAttribute('src', iconsrc);
