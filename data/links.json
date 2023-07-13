@@ -10,7 +10,7 @@
 					"title": "Media Query"
 				},
 				{
-					"url": "week-1/chamber-site-plan.html",
+					"url": "week01/chamber-site-plan.html",
 					"title": "Chamber Site Plan"
 				}
 			]
@@ -68,6 +68,10 @@
 				{
 					"url": "chamber/directory.html",
 					"title": "Directory"
+				},
+				{
+					"url": "FinalProject/index.html",
+					"title": "Final Project"
 				}
 			]
 		}
